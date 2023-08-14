@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Snippet', sans-serif;
+
+}
+
+.logoBox {
+    width: 100%;
+
+}
+
+.logo {
+    max-width: 40%;
+}
+
+.navLinks {
+    display: flex;
+    gap: 3.4rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
