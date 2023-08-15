@@ -1,0 +1,49 @@
+.blogContainer {
+    position: relative;
+}
+
+.imageWrapper {
+    width: 80rem;
+
+}
+
+.imageBox {
+    padding: 4rem;
+}
+
+.headerBox {
+    margin-left: 4rem;
+
+}
+
+.headerBox h4 {
+    font-family: 'Snippet', sans-serif;
+    -webkit-text-stroke: .5px white;
+    background-color: #F9BD2B;
+    font-size: 3.8rem;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 9px;
+}
+
+.imageWrapper img {
+    max-width: 100%;
+    border-radius: 9px;
+    box-shadow: 3px 4px 9px rgba(0, 0, 0, .2);
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.right img {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-end;
+}
