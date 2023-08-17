@@ -33,6 +33,15 @@
     border-radius: 4px;
 }
 
+.projectsWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageWrapper:hover .layer {
+    bottom: 0%;
+}
+
 .imageWrapper {
     width: 55rem;
     border-radius: 12px;
@@ -41,11 +50,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .imageWrapper img {
     padding: 4rem;
     max-width: 60%;
+
+
+}
+
+.layer {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: calc(100% - .1px);
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+    display: flex;
+    align-items: top;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Snippet', sans-serif;
+    font-weight: 600;
+
+}
+
+.description {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.layer button {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    padding: .8rem 4rem;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
 
 
 }

@@ -14,25 +14,51 @@ const Projects = ({ data }) => {
         </div>
 
         <div className={classes.projectBlock}>
-          <div className={classes.projectsWrapper}>
+          <div>
             {data.slice(0, 3).map((item, index) => (
               <div key={index}>
                 <div
                   style={{ border: `4px solid ${item.color}` }}
                   className={classes.imageWrapper}
                 >
+                  <div
+                    className={classes.layer}
+                    style={{ backgroundColor: item.color }}
+                  >
+                    <img src={item.img} alt="name" />
+                    <div>
+                      <p className={classes.description}>{item.description}</p>
+                      <a href={item.link}>
+                        <button style={{ backgroundColor: item.color }}>
+                          Visit
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                   <img src={item.img} alt="name" />
                 </div>
               </div>
             ))}
           </div>
-          <div className={classes.projectsWrapper}>
+          <div>
             {data.slice(3).map((item, index) => (
               <div key={index}>
                 <div
                   style={{ border: `4px solid ${item.color}` }}
                   className={classes.imageWrapper}
                 >
+                  <div
+                    className={classes.layer}
+                    style={{ backgroundColor: item.color }}
+                  >
+                    <img src={item.img} alt="name" />
+                    <div>
+                      <p className={classes.description}>{item.description}</p>
+                      <button style={{ backgroundColor: item.color }}>
+                        Visit
+                      </button>
+                    </div>
+                  </div>
                   <img src={item.img} alt="name" />
                 </div>
               </div>
