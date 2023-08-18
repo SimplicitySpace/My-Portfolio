@@ -15,7 +15,7 @@ function App() {
       <Navigation />
       <Hero />
       <Projects data={projectDataArray} />
-      <Blogs data={BlogContentArray} />
+      {/* <Blogs data={BlogContentArray} /> */}
       <Contact />
     </>
   );

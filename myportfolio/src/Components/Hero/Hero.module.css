@@ -21,3 +21,77 @@
     font-family: 'Snippet', sans-serif;
     line-height: 1.6;
 }
+
+@media (max-width: 59em) {
+    .subHeadingTag h4 {
+        font-size: 2.6rem;
+        font-family: 'Snippet', sans-serif;
+        line-height: 1.6;
+
+    }
+
+    .section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8rem;
+        height: 60vh;
+        margin: auto auto;
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 41em) {
+    .subHeadingTag h4 {
+        font-size: 2.6rem;
+        font-family: 'Snippet', sans-serif;
+        line-height: 1.6;
+
+    }
+
+    .headerTag h1 {
+        font-size: 4.8rem;
+        font-family: 'Solway', serif;
+
+    }
+
+    .section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8rem;
+        height: 60vh;
+        margin: auto auto;
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 31em) {
+    .subHeadingTag h4 {
+        font-size: 1.8rem;
+        font-family: 'Snippet', sans-serif;
+        line-height: 1.6;
+
+    }
+
+    .headerTag h1 {
+        font-size: 6rem;
+        font-family: 'Solway', serif;
+        font-weight: 550;
+
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+        height: 40vh;
+        margin-top: 0rem;
+        padding: 0rem;
+        margin-left: 2rem;
+    }
+}

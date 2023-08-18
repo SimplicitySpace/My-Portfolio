@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navigation.module.css";
-
+import { Link } from "react-scroll";
 const Navigation = () => {
   return (
     <section className={classes.navigation}>
@@ -12,9 +12,19 @@ const Navigation = () => {
         />
       </div>
       <div className={classes.navLinks}>
-        <p>Blog</p>
-        <p>Projects</p>
-        <p>Store</p>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          {" "}
+          <p>Projects</p>
+        </Link>
+        <Link to="store" spy={true} smooth={true} offset={-100} duration={500}>
+          <p>Contact</p>
+        </Link>
       </div>
     </section>
   );

@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Projects.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Projects = ({ data }) => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  });
   return (
     <section>
       <main className={classes.main}>
-        <div className={classes.projectTypeWrapper}>
+        <div id="projects" className={classes.projectTypeWrapper}>
           <div className={classes.projectTypeLive}>
             <h4>Live</h4>
           </div>
@@ -14,10 +19,14 @@ const Projects = ({ data }) => {
         </div>
 
         <div className={classes.projectBlock}>
-          <div>
+          <div className={classes.projectTypeLiveNew}>
+            <h4>Live</h4>
+          </div>
+          <div className={classes.pad}>
             {data.slice(0, 3).map((item, index) => (
-              <div key={index}>
+              <div className={classes.margin} key={index}>
                 <div
+                  data-aos="fade-up"
                   style={{ border: `4px solid ${item.color}` }}
                   className={classes.imageWrapper}
                 >
@@ -40,10 +49,14 @@ const Projects = ({ data }) => {
               </div>
             ))}
           </div>
+          <div className={classes.projectTypeDemoNew}>
+            <h4>Demo</h4>
+          </div>
           <div>
             {data.slice(3).map((item, index) => (
-              <div key={index}>
+              <div className={classes.margin} key={index}>
                 <div
+                  data-aos="fade-up"
                   style={{ border: `4px solid ${item.color}` }}
                   className={classes.imageWrapper}
                 >

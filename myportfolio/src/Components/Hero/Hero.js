@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className={classes.section}>
       <div className={classes.headerTag}>
-        <h1>Front End Developer</h1>
+        <h1>Front&nbsp;End Developer</h1>
       </div>
       <div className={classes.subHeadingTag}>
         <h4>
