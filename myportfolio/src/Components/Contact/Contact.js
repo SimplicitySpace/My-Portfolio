@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Contact.module.css";
 const Contact = () => {
+  const [isEmailShown, setisEmailShown] = useState(false);
   return (
     <section id="store" className={classes.section}>
       <div className={classes.topRow}>
         <div className={classes.wrapper}>
-          <a>
+          <a href="https://instagram.com/spaces_ui?igshid=OGQ5ZDc2ODk2ZA==">
             <button>
               <span></span>
               <span></span>
@@ -33,7 +34,7 @@ const Contact = () => {
           </a>
         </div>
         <div className={classes.wrapper}>
-          <a>
+          <a href="https://dribbble.com/Spaces00/shots">
             <button>
               <span></span> <span></span> <span></span> <span></span>{" "}
               <div className={classes.layer}></div>
@@ -61,7 +62,7 @@ const Contact = () => {
       </div>
       <div className={classes.bottomRow}>
         <div>
-          <a>
+          <a href="https://github.com/SimplicitySpace">
             <button>
               <span></span>
               <span></span>
@@ -87,7 +88,7 @@ const Contact = () => {
           </a>
         </div>
         <div>
-          <a>
+          <a href="https://www.linkedin.com/in/simplicity-space/">
             <button>
               <span></span>
               <span></span>
@@ -118,7 +119,7 @@ const Contact = () => {
         </div>
       </div>
       <div className={classes.hireMe}>
-        <button>
+        <button onClick={() => setisEmailShown(!isEmailShown)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-mail-heart"
@@ -136,7 +137,7 @@ const Contact = () => {
             <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
             <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
           </svg>
-          <p>Hire Me</p>
+          <p>{isEmailShown ? "Simplicityspaces@gmail.com" : "Hire Me"}</p>
         </button>
       </div>
     </section>

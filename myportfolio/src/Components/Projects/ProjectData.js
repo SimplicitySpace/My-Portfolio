@@ -29,13 +29,15 @@ const ProjectData = [
     color: "#10263E",
     name: "SimplyBlogs",
     description: "A Blog",
+    link: "https://cspaces1.netlify.app/",
   },
   {
-    img: "https://res.cloudinary.com/da3avivzn/image/upload/v1692107081/My%20Portfolio/Group_19_xjvnby.png",
+    img: "https://res.cloudinary.com/da3avivzn/image/upload/v1686312229/SpacesBrandPage/Screen_Shot_2023-06-09_at_5.02.18_AM_roxha1.png",
     title: "",
-    color: "#C1AEA0",
-    name: "Ape",
-    description: "Fun, I promise",
+    color: "#0197F6",
+    name: "Portfolio",
+    description: "Built For A Friend",
+    link: "https://9celytics.netlify.app/",
   },
   {
     img: "https://res.cloudinary.com/da3avivzn/image/upload/v1692107080/My%20Portfolio/Group_20_okqizi.png",
@@ -43,6 +45,7 @@ const ProjectData = [
     color: "#CB9833",
     name: "Credit Card",
     description: "My First App Built With React",
+    link: "https://spaces-crediitcard.netlify.app/",
   },
 ];
 export default ProjectData;
