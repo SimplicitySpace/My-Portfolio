@@ -67,9 +67,11 @@ const Projects = ({ data }) => {
                     <img src={item.img} alt="name" />
                     <div>
                       <p className={classes.description}>{item.description}</p>
-                      <button style={{ backgroundColor: item.color }}>
-                        Visit
-                      </button>
+                      <a href={item.link}>
+                        <button style={{ backgroundColor: item.color }}>
+                          Visit
+                        </button>
+                      </a>
                     </div>
                   </div>
                   <img src={item.img} alt="name" />
